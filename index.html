@@ -1,1 +1,51 @@
+<html>
+    <head>
+        <title>Stupid</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <center><h3>Licht Ein und Aus schalten..</h3></center>
+        <br><br>
+        <center>
+            <button class="big" id="submit1">
+                <p>EIN</p>
+            </button>
+            <button class="big" id="submit2">
+                <p>AUS</p>
+            </button>
+        </center>
 
+        <script>
+            $('#submit1, #submit2').click(function () {
+                if (this.id == 'submit1') {
+                    ihateyou("button1");
+                }
+                else if (this.id == 'submit2') {
+                    ihateyou("button2");
+                }
+            });
+
+            function ihateyou(button) {
+                if(button === "button1") {
+                    document.location.href = "shit/on.html"
+                } else if(button === "button2") {
+                    document.location.href = "shit/off.html"
+                }
+            }
+        </script>
+
+        <style>
+
+            html {
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+            }
+
+            .big {
+                border: black;
+                border-radius: 10px;
+                background-color: gray;
+            }
+        </style>
+
+    </body>
+</html>
